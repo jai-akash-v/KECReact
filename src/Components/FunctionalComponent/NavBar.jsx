@@ -1,16 +1,17 @@
-//import React from "react";
 import '../../assets/css/NavBar.css'
+import { Link } from 'react-router-dom';
+
 var NavBar = () =>{
-    var styling = {
-        backgroundColor: "black",
-        fontSize: "100px",
-        color: "orange",
-        textDecoration: "underline",
-    }
     return(
         <header>
-            <h1 style={styling}>This is Navigation Bar</h1>
-            <h2 id='idSEg'>Testing Styling</h2>
+            <nav>
+                <ul>
+                    <li><Link to='/' className='link'>Home</Link></li>
+                    <li><Link to="/about" className='link' target='_blank'>About</Link></li>
+                    <li><Link to="/gallery" className='link'>Gallery</Link></li>
+                    <li><Link to="/contact" className='link'>Contact</Link></li>
+                </ul>
+            </nav>
         </header>
     )
 }
