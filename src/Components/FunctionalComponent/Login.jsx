@@ -20,7 +20,7 @@ var Login = () => {
         var isLoggedIn = res.data.isLoggedIn;
         console.log(isLoggedIn)
         if(isLoggedIn){
-            navigate(" ");
+            navigate("/");
       }
   })
     .catch((err) => console.log(err));
