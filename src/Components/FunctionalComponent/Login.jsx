@@ -33,7 +33,7 @@ var Login = () => {
 
   return (
     <div style={{padding:5}} className='form-box' onSubmit={login}>
-        <h1>Welcome Back!</h1>
+        <h1>Welcome!</h1>
         <h1>Login</h1>
       <form onSubmit={login}>
         <label htmlFor='email'>Email: </label>
